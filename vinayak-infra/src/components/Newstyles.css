@@ -1,0 +1,122 @@
+.templateContainer{
+    margin: 30px;
+}
+.templateContainer > .searchInput_Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+.templateContainer > .searchInput_Container input:hover{
+    border-color: black;
+    
+}
+
+.searchcon{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.magnifying{
+    margin-top: 20px;
+    margin-left: 20px;
+    /* width: 20px;
+    height: 20px; */
+}
+.templateContainer > .searchInput_Container input{
+    width: 50%;
+    /* padding: 10px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    
+}
+
+.templateContainer > .searchInput_Container .searchcon input {
+    margin-left: 20%;
+}
+.templateContainer .template_Container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.templateContainer .template_Container .template{
+    background-color: white;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+.templateContainer .template_Container .template img{
+    height: 250px;
+}
+
+/* .button {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: black;
+  }
+  
+  .button:hover {
+    background-color: red;
+  } */
+
+
+  .change {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'El-Messri';
+  }
+  .change::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: 'CONTACT';
+    transition: all .3s;
+  }
+  .change::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '91+7710940895';
+    transition: all .3s;
+  }
+  .change:hover::before {
+    top: -60px;
+  }
+  .change:hover::after {
+    top: 0;
+  }
