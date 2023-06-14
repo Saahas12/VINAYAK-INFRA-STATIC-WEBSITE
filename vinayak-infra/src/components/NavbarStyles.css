@@ -34,6 +34,30 @@
     font-weight: bold;
 }
 
+.header a.active3::before{
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 2px;
+    border-bottom: 2px solid black;
+    bottom: 27px;
+}
+
+
+.header li a::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom:27px;
+    transition: width .3s;/*300ms*/
+}
+
+.header li a:hover::before{
+    width:27px; 
+}
+
 .hamburger{
     display: none;
 }
@@ -66,7 +90,8 @@
         padding: 1rem 0;
     }
 
-    .nav-menu a{
+    .nav-menu a::before{
         font-size: 20px;
+        display: none;
     }
 }

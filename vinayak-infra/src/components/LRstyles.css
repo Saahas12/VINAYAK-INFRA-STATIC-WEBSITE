@@ -1,11 +1,11 @@
-.image{
+.image {
     background: rgba(0, 0, 0, 0.3);
     height: 50vh;
     width: 100%;
     position: relative;
 }
 
-.image::before{
+.image::before {
     content: '';
     background: url('http://www.thelaxmigroup.in/images/resources/splend.jpeg') no-repeat center center/cover;
     height: 100%;
@@ -16,7 +16,7 @@
     z-index: -1;
 }
 
-.image .heading{
+.image .heading {
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,27 +25,26 @@
     align-items: center;
 }
 
-.image h1{
+.image h1 {
     font-size: 40px;
     color: wheat;
 }
 
-.image p{
+.image p {
     font-size: 40px;
     color: wheat;
 }
 
-#outer
-{
-    width:100%;
+#outer {
+    width: 100%;
     text-align: center;
 }
-.inner
-{
+
+.inner {
     display: inline-block;
 }
 
-.inner .com{
+.inner .com {
     list-style-type: none;
     background: wheat;
     padding-top: 5px;
@@ -55,17 +54,23 @@
     margin-left: 10px;
     border-radius: 5px;
     margin-top: 5px;
-  }
-  .com a{
+}
+
+.com a {
     color: #000;
     font-weight: 100;
-  
-  }
-  .com:hover{
-    background:rgb(249, 195, 94);
-  }
 
-  .inner .loc{
+}
+
+.com:hover {
+    background: rgb(249, 195, 94);
+}
+
+.com .active {
+    background-color: orange;
+}
+
+.inner .loc {
     list-style-type: none;
     background: #5ba545;
     padding-top: 5px;
@@ -75,53 +80,59 @@
     margin-left: 720px;
     border-radius: 5px;
     margin-top: 5px;
-  }
+}
 
-  .loc a{
+.loc a {
     color: #fff;
     font-weight: 100;
-  
-  }
-  .loc:hover{
-    background:rgb(249, 195, 94);
-  }
 
-  .features{
+}
+
+.loc:hover {
+    background: rgb(249, 195, 94);
+}
+
+.features {
     padding: 50px 12%;
     font-size: 22px;
 }
 
-.rows{
+.rows {
     display: flex;
-    width:100%;
+    width: 100%;
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 0;
 }
 
-.text-col{
+.text-col {
     flex-basis: 50%;
     margin-bottom: 20px;
     text-align: justify;
 }
 
-.img-col{
+.img-col {
     flex-basis: 50%;
     margin-bottom: 20px;
 }
 
-.img-col img{
+.img-col img {
     display: block;
     width: 90%;
     margin: auto;
 }
 
-#gallery{
+#gallery {
     padding-top: 50px;
     margin-bottom: 50px;
 }
 
-#amenities{
+#gallery2{
+    padding-top: 16px;
+    margin-bottom: 17px;
+}
+
+#amenities {
     padding-top: 70px;
     margin-bottom: 50px;
 }
@@ -129,101 +140,130 @@
 /* .nities{
     margin-top: 10px;
 } */
-#location{
+#location {
     padding-top: 50px;
 }
-#location,h2{
+
+#location,
+h2 {
     text-align: center;
     font-size: 24px;
 }
 
-#location h1{
+#location h1 {
     font-weight: bold;
 }
 
-#location #add{
+#location #add {
     font-weight: normal;
 }
 
-#location #loc_add{
+#location #loc_add {
     font-size: 20px;
 }
 
-#floorplan{
+#floorplan1 {
     padding-top: 50px;
     margin-bottom: 50px;
 }
-#floorplan img{
+
+#floorplan1 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
 }
 
-#amenities img{
+#amenities img {
     width: 100px;
     height: 100px;
     vertical-align: middle;
 }
 
-#maha_rera #maha_p{
+#maha_rera #maha_p {
     font-size: 20px;
     text-align: center;
 }
 
-#maha_rera #maha_p #maha_a:hover{
+#maha_rera #maha_p #maha_a:hover {
     color: blue;
 }
 
-#maha_a:visited{
+#maha_a:visited {
     color: violet;
 }
 
-#maha_a:link{
+#maha_a:link {
     color: gray;
 }
 
-#rowA{
+#rowA {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px;  
+    margin-left: -15px;
     padding-left: 150px;
 }
 
+
+#map-bar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 68%;
+}
+
+#map-bar iframe {
+    width: 80%;
+    text-align: center;
+}
+
+
 @media only screen and (max-width:980px) {
 
-    .text-col, .img-col{
+    .text-col,
+    .img-col {
         flex-basis: 100%;
     }
-    
-    .features p{
+
+    .features p {
         font-size: 15px;
     }
 
-    .rows:nth-child(2), .rows:nth-child(4){
+    .rows:nth-child(2),
+    .rows:nth-child(4) {
         flex-direction: column-reverse;
     }
 
-    .features .rows{
+    .features .rows {
         padding: 10px 0;
     }
 
-    .heading h1,p{
+    .heading h1,
+    p {
         text-align: center;
     }
 
-    /* .location h1{
-        margin-top: 50px;
-    } */
+    #map-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #map-bar iframe {
+        width: 80%;
+        text-align: center;
+    }
 }
-@media only screen and (max-width:800px){
-    .rows,.text-col,h2{
+
+@media only screen and (max-width:800px) {
+
+    .rows,
+    .text-col,
+    h2 {
         text-align: center;
     }
 
-    #floorplan img{
+    #floorplan1 img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -231,6 +271,40 @@
         height: 300px;
     }
 
+    #map-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #map-bar iframe {
+        width: 80%;
+    }
+
+    #gallery2{
+        margin-bottom: 137px;
+        padding-top: 179px;
+    }
+
+    #floorplan1{
+        padding-top: 124px;
+        margin-bottom: 49px;
+    }
+
+
+}
+
+
+@media only screen and (max-width:1180px) {
+
+    #gallery2{
+        margin-bottom: 137px;
+        padding-top: 179px;
+    }
+
+    #floorplan1{
+        padding-top: 124px;
+        margin-bottom: 49px;
+    }
     
 }
 

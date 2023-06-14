@@ -8,6 +8,38 @@
       font-weight: 400;
       text-align: center;
   }
+
+  .image1{
+    background: rgba(0, 0, 0, 0.3);
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.image1::before{
+    content: '';
+    background: url('https://images.unsplash.com/photo-1539269071019-8bc6d57b0205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.image1 .heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1 .comh1{
+    font-size: 40px;
+    color: black;
+}
   
   img {
     height: auto;
@@ -45,21 +77,32 @@
     height: 500px;
   }
 
-
-  /* .btn-ong{
-    margin-top: 5px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    font-family: 'El-Messri';
-    font-weight: 500;
+  .pressong1, .presscom1{
+    list-style-type: none;
+    background: #5790f3;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    margin-left: 10px;
     border-radius: 5px;
-    background-color: rgb(230, 88, 37);
-    text-align: center;
-    color: white;
-    margin-left: 525px;
-  } */
+    margin-top: 5px;
+  }
+
+  .temp{
+    color:white;
+  }
+  
+  .active1{
+    background:linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
+
+  .material-symbols-outlined{
+    vertical-align: bottom;
+    margin-right: 5px;
+  }
+
+
 
 
   .btn {
@@ -94,13 +137,26 @@
     padding: 1rem;
   }
   
-  @media (min-width: 40rem) {
+  @media (min-width: 640px) {
     .cards_item {
       width: 50%;
     }
   }
+
+  @media (min-width: 520px) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
   
-  @media (min-width: 56rem) {
+  
+  @media (min-width: 896px) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+
+  @media (min-width: 1920px) {
     .cards_item {
       width: 33.3333%;
     }
@@ -117,7 +173,8 @@
   
   .card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    background: rgb(2,0,36);
+background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   }
   
   .card_title {

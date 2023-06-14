@@ -9,9 +9,20 @@ position: absolute;
 width: 100%;
 
 
-@media (max-width: 600px) {
-	// padding: 70px 30px;
+@media (max-width: 1180px) {
+	.col{
+	display: flex;
+    flex-direction: columnn;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+	.foot1{
+		text-align:center;
+	}
 }
+
+
 `;
 
 export const Container = styled.div`
@@ -39,7 +50,10 @@ grid-gap: 20px;
 
 @media (max-width: 1000px) {
 	grid-template-columns: repeat(auto-fill,
-						minmax(200px, 1fr));
+						minmax(167px, 1fr));
+
+						
+
 }
 `;
 
@@ -48,6 +62,7 @@ color: #000;
 margin-bottom: 20px;
 font-size: 18px;
 text-decoration: none;
+
 
 &:hover {
 	color: orange;
@@ -60,4 +75,14 @@ font-size: 24px;
 color: #000;
 margin-bottom: 40px;
 font-weight: bold;
+@media (max-width: 600px) {
+	
+	.foot1{
+	text-align:center;}
+}
+
+
+
+
 `;
+

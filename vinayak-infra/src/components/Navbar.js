@@ -6,6 +6,7 @@ import myLogo from '../assests/logo5.png';
 const Navbar = () => {
     const [click,setClick] = useState(false)
     const handleClick = () => setClick(!click)
+
   return (
     <div className='header'>
         <Link to='/'><img src={myLogo} alt=""/></Link>
@@ -15,6 +16,7 @@ const Navbar = () => {
             </li>
 
             <li>
+                
                 <Link to='/projects'>Projects</Link>
             </li>
 
